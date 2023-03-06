@@ -1,4 +1,6 @@
 document.getElementById('search-input').addEventListener('keyup', async (e) => {
+   console.log("search",e)
+   
     // Search comments
     // Use this API: https://jsonplaceholder.typicode.com/comments?postId=3
     // Display the results in the UI
