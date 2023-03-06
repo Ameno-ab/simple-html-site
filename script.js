@@ -26,12 +26,15 @@ document.getElementById("search-input").addEventListener("keyup", async (e) => {
 
         function register() {
           var printThis = "";
-
+              if(result.length === 0){
+                return "not found"
+              }else{
           for (var i = 0; i < result.length; i++) {
             printThis += "<li>" + result[i] + "</li>";
           }
           return printThis;
         }
+      }
 
         document.getElementById("results").innerHTML = register();
 
