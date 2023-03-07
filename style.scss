@@ -1,6 +1,50 @@
-body {
-    background-color: aquamarine;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-.main{
-    background-color: blanchedalmond;
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #DEDEDE;
+    color: #5a6674;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.search {
+    border: 4px solid #00B4CC;
+    padding: 5px;
+    height: 50px;
+    width:300px;
+    border-radius: 5px;
+    color: black;
+   
+    
+}
+.list-contanier li{
+    background-color: white;
+    list-style-type: none;
+    font-size: medium;
+    width: 300px;
+    padding: 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+     margin-right: 30px;
+    
+
 }
